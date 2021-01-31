@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: white;
+}
+
+nav ul {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav button {
+    color: white;
+    padding: 10px;
+    background-color: #00AA8A;
+    border-style: none;
+    border-radius: 5%;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #ECECEC;
+}
+
+main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    background-color: white;
+}
+
+main h2, h3 {
+    margin: 0;
+    padding: 5px;
+}
+
