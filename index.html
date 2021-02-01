@@ -10,21 +10,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="box">
             <ul>
-                <li><strong>COMPANY</strong>LOGO</li>
+                <li class="logo"><img src="img/logo-icon.png" alt="logo-icon"><strong>COMPANY</strong>LOGO</li>
                 <li><button>MAKE THIS POPUP</button></li>
             </ul>
         </nav>
         <h1>WELCOME</h1>
     </header>
-    <main>
+    <main class="box">
         <h2>Heading 1</h2>
         <h3>Heading 2</h3>
+
+        <!-- used a simple html paragraph random genrator to copy and paste this in -->
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
             tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
             semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
@@ -35,17 +38,24 @@
             porttitor, facilisis luctus, metus</p>
 
         <div id="images">
-            <img src="https://picsum.photos/275/200?radnom=1">
-            <img src="https://picsum.photos/275/200?radnom=2">
-            <img src="https://picsum.photos/275/200?radnom=3">
+            <img src="https://picsum.photos/225/150?radnom=1">
+            <img src="https://picsum.photos/225/150?radnom=2">
+            <img src="https://picsum.photos/225/150?radnom=3">
         </div>
     </main>
     <footer>
-        <p><strong>COMPANY</strong>LOGO</p>
-        <ul id="icon-links">
-            <li>hello</li>
-        </ul>
-        <p>&#169; Copyright 2021. All rights reserved</p>
+        <p id="logo"><img src="img/logo-icon.png" alt="logo-icon"><strong>COMPANY</strong>LOGO</p>
+
+        <!-- These are not the exact icons you used in your preview. just a common online library for social media icons -->
+        <div id="icon-links">
+            <a href="#" class="fa fa-facebook" id="fa-facebook"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-vimeo"></a>
+            <a href="#" class="fa fa-dribbble"></a>
+        </div>
+        <p id="copyright">&#169; Copyright 2021. All rights reserved</p>
     </footer>
 </body>
 
