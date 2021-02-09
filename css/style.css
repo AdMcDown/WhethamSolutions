@@ -23,7 +23,9 @@ nav ul {
     list-style-type: none;
 }
 
-nav button {
+nav a {
+    text-decoration: none;
+    cursor: pointer;
     color: white;
     padding: 10px;
     background-color: #00AA8A;
@@ -98,6 +100,11 @@ footer p {
     margin-bottom: 0px;
     padding-top: 5px;
     opacity: 0.5;
+}
+
+.modal {
+    height: 400px;
+    width: 100px;
 }
 
 

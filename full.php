@@ -2,37 +2,51 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Wetham Solutions | Test Page</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <?php Loader::element('header_required') ?>
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link to my css stylesheet -->
+    <link rel="stylesheet" href="<?= $view->getThemePath() ?>/css/style.css">
+    
     <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="<?= $view->getThemePath() ?>/css/magnific-popup.css">
 
     <!-- popup css stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
+    <!-- links to use google font Railway -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- link to library to use socail media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+<div class="<?= $c->getPageWrapperClass() ?>">
     <header>
+        <!-- simple navigation with comanpylogo and button -->
         <nav class="box">
             <ul>
-                <li class="logo"><img src="img/logo-icon.png" alt="logo-icon"><strong>COMPANY</strong>LOGO</li>
+                <!-- just did quick snip it of logo image and made my own in img folder -->
+                <li class="logo"><img src="<?= $view->getThemePath() ?>/img/logo-icon.png" alt="logo-icon"><strong>COMPANY</strong>LOGO</li>
                 <li><a href="#welcome-popup" rel="modal:open">MAKE THIS POPUP</a></li>
             </ul>
         </nav>
         <h1>WELCOME</h1>
     </header>
     <main class="box">
-        <h2>Heading 1</h2>
-        <h3>Heading 2</h3>
+        <h2>Header 1</h2>
+        <!-- <h3>Heading 2</h3> -->
+        <div>
+            <?php
+            $a = new Area('Header 2');
+            $a->display($c); ?>
+        </div>
 
         <!-- used a simple html paragraph random genrator to copy and paste this in -->
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
@@ -44,6 +58,7 @@
             egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
             porttitor, facilisis luctus, metus</p>
 
+        <!-- used three random photos genorated from picsum -->
         <div class="images-container" id="images-frame">
             <a href="https://picsum.photos/675/450?radnom=1">
                 <!-- I added inline style here so the image is smaller but show full image on click with magnific  -->
@@ -62,7 +77,7 @@
         <!-- popup up window information -->
         <div id="welcome-popup" class="modal" height="300px" width="200px">
             <p>Welcome!</p>
-            <p>This project was completed by Adam McNown for wetham Solutions Inc.</p>
+            <p>This project was completed by Adam McNown for Wetham Solutions Inc.</p>
             <p>
                 I found this project decently straight foward with very helpful jQuery documentation to follow! I built
                 all my HTML and CSS to look like the jpg image and was able to use the jQuery documentation to build
@@ -73,11 +88,11 @@
             <p>I hope you enjoy my work and thank you for this opportunity</p>
         </div>
 
-        <p id="logo"><img src="img/logo-icon.png" alt="logo-icon"><strong>COMPANY</strong>LOGO</p>
+        <p id="logo"><img src="<?= $view->getThemePath() ?>/img/logo-icon.png" alt="logo-icon"><strong>COMPANY</strong>LOGO</p>
 
         <!-- These are not the exact icons you used in your preview. just a common online library for social media icons -->
         <div id="icon-links">
-            <!-- I did not add links at this time -->
+            <!-- I did not add links at this time but can add company links to facebook pages and others when needed -->
             <a href="#" class="fa fa-facebook" id="icon"></a>
             <a href="#" class="fa fa-google" id="icon"></a>
             <a href="#" class="fa fa-twitter" id="icon"></a>
@@ -88,17 +103,21 @@
         <p id="copyright">&#169; Copyright 2021. All rights reserved</p>
     </footer>
 
+    </div>
+
     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <!-- Magnific Popup core JS file -->
-    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="<?= $view->getThemePath() ?>/js/jquery.magnific-popup.js"></script>
 
     <!-- my js folder for personal modifications -->
-    <script src="js/magnific.js"></script>
+    <script src="<?= $view->getThemePath() ?>/js/magnific.js"></script>
 
     <!-- pop up hQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <?php Loader::element('footer_required') ?>
 
 </body>
 
