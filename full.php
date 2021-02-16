@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<!-- This project was done for wetham solutions to showcase my abilities with HTML5, CSS3, PHP and JavaScript/jQuery -->
+<!-- This php fold was used to upload to cPanel and displayed using concrete5 -->
 <head>
     
     <?php Loader::element('header_required') ?>
@@ -41,7 +43,7 @@
     </header>
     <main class="box">
         <h2>Header 1</h2>
-        <!-- <h3>Heading 2</h3> -->
+        <!-- this Area I used to test concrete5's editable areas -->
         <div>
             <?php
             $a = new Area('Header 2');
@@ -77,22 +79,19 @@
         <!-- popup up window information -->
         <div id="welcome-popup" class="modal" height="300px" width="200px">
             <p>Welcome!</p>
-            <p>This project was completed by Adam McNown for Wetham Solutions Inc.</p>
+            <p>This project was completed by Adam McNown for Whetham Solutions Inc.</p>
             <p>
                 I found this project decently straight foward with very helpful jQuery documentation to follow! I built
                 all my HTML and CSS to look like the jpg image and was able to use the jQuery documentation to build
                 simple image zooms and this popup window.</p>
-            <p>
-                Working with cPanel and concrete5 was a bit of a challenge but I intend to look further into these
-                systems and how they function.</p>
             <p>I hope you enjoy my work and thank you for this opportunity</p>
         </div>
 
         <p id="logo"><img src="<?= $view->getThemePath() ?>/img/logo-icon.png" alt="logo-icon"><strong>COMPANY</strong>LOGO</p>
 
-        <!-- These are not the exact icons you used in your preview. just a common online library for social media icons -->
+        <!-- used a common online library for social media icons -->
         <div id="icon-links">
-            <!-- I did not add links at this time but can add company links to facebook pages and others when needed -->
+            <!-- can be used to add links to facebook pages and others dependant on website being designed -->
             <a href="#" class="fa fa-facebook" id="icon"></a>
             <a href="#" class="fa fa-google" id="icon"></a>
             <a href="#" class="fa fa-twitter" id="icon"></a>
@@ -114,7 +113,7 @@
     <!-- my js folder for personal modifications -->
     <script src="<?= $view->getThemePath() ?>/js/magnific.js"></script>
 
-    <!-- pop up hQuery -->
+    <!-- pop up jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
     <?php Loader::element('footer_required') ?>
